@@ -37,6 +37,10 @@ Push to remote repo:
 Pull changes from remote repo:
 	pass git pull
 
+Edit gpg key passphrase:
+	gpg --edit-key <key-id>
+	passwd
+	save
 
 Setup on new machine:
 	1. Export keys:
