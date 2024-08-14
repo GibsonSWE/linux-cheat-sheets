@@ -1,0 +1,11 @@
+Generate SSH key pair:
+	ssh-keygen -t ed25519 -C "comment"
+
+Insert key to remote host:
+	ssh-copy-id -i <key-path> -p <port> <remote host>	
+
+Open SSH Agent in the background:
+	eval $(ssh-agent)
+
+Add SSH Key Passphrase for session:
+	ssh-add <key>

@@ -1,0 +1,4 @@
+Apt mark
+	apt-mark hold <package-name>
+	apt-mark unhold <package-name>
+	apt-mark showhold

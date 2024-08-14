@@ -1,0 +1,9 @@
+Check USB kernel messages:
+	dmesg | grep -i usb
+
+Hardware commands:
+	lsblk
+	lscpu
+	lspci
+	lsusb -t
+	lshw -short

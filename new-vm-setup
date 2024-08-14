@@ -1,0 +1,23 @@
+	adduser <username>
+	passwd
+
+	usermod -aG sudo <username>
+
+	timedatectl set-timezone Europe/Stockholm
+
+	apt install micro bat htop tmux tree git curl ncdu inetutils-ping inetutils-traceroute dnsutils net-tools
+
+For password-store
+	apt install pass
+
+For remote log server:
+	apt install rsyslog
+
+For better remote desktop:
+	apt install xrdp
+
+For guest agent:
+	apt install qemu-guest-agent
+
+Fuzzy finder:
+	apt install fzf

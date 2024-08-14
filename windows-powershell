@@ -1,0 +1,2 @@
+Show domain user:
+	net user <user> /domain

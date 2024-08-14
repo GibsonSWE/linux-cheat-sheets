@@ -1,0 +1,56 @@
+Show Password store:
+	pass
+
+Insert password:
+	pass insert <name>/<child-category>
+
+Generate password:
+	pass generate <name>/<child-category>
+
+Remove password:
+	pass rm <name>
+
+Search password:
+	pass find <term>
+
+Show password:
+	pass show <name>
+
+Copy password to clipboard:
+	pass show -c <name>
+
+Edit password metadata:
+	pass edit <name>
+
+Grep password metadata:
+	pass grep <"string">
+
+Print pass git log:
+	pass git log
+
+Add remote repo:
+	pass git remote add origin https://<token>@github.com/GibsonSWE/pwd-store.git
+
+Push to remote repo:
+	pass git push origin main
+
+Pull changes from remote repo:
+	pass git pull
+
+
+Setup on new machine:
+	1. Export keys:
+		gpg --output public.gpg --armor --export <email>
+		gpg --output private.gpg --armor --export-secret-key <email>
+	1. Transfer keys using scp
+	2. Import keys:
+		gpg --import private.gpg
+		gpg --import public.gpg
+	3. Clone remote repo to new machine:
+		git clone https://<token>@github.com/GibsonSWE/pwd-store.git .password-store
+	4. Edit trust level of the public key:
+		gpg --edit-key <email>
+		trust
+		5
+		save
+

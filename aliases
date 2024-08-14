@@ -1,0 +1,18 @@
+alias cpu10='ps auxf | sort -nr -k 3 | head -10'
+alias cpu5='ps auxf | sort -nr -k 3 | head -5'
+alias mem10='ps auxf | sort -nr -k 4 | head -10'
+alias mem5='ps auxf | sort -nr -k 4 | head -5'
+
+alias l='ls -lh'
+alias la='ls -lhA'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+
+alias df='df -h -x squashfs -x tmpfs -x devtmpfs'
+alias lsmount='mount | column -t'
+
+alias install='sudo apt update && sudo apt install'
+alias update='sudo apt update'
+alias remove='sudo apt remove'
+
+alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
