@@ -23,7 +23,7 @@ Edit password metadata:
 	pass edit <name>
 
 Grep password metadata:
-	pass grep <"string">
+	pass grep "<string>"
 
 Print pass git log:
 	pass git log
