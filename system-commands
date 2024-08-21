@@ -1,6 +1,10 @@
 Check processes:
 	ps auxf
 
+Check process ID:
+	ps auxf | grep <process-name>
+	pidof <process-name>
+
 Check mounted volumes:
 	mount | column -t
 
