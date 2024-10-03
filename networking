@@ -6,6 +6,7 @@ Check DNS-service:
 
 Config network interface
 	sudo ifconfig <interface> <address> netmask <netmask> up
+	sudo ip addr add <address>/<netmask> dev <interface>
 
 Config default gateway
 	sudo ip route add default via <address>
