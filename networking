@@ -4,6 +4,9 @@ Flush DNS cache:
 Check DNS-service:
 	resolvectl status
 
+Config DNS address:
+	sudo resolvectl dns <interface> <address>
+
 Config network interface
 	sudo ifconfig <interface> <address> netmask <netmask> up
 	sudo ip addr add <address>/<netmask> dev <interface>
