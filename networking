@@ -19,3 +19,6 @@ Config default gateway
 
 Forward port 80 to desired service port
 	sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port <service-port>
+
+List active connections:
+	ss -t(tpc) -u(udp) -s(stats) -4(ipv4) -6(ipv6)

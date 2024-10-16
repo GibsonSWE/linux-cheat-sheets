@@ -1,3 +1,6 @@
+Check OS-release:
+	cat /etc/os-release
+
 Check processes:
 	ps auxf
 
