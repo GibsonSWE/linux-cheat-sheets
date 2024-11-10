@@ -22,3 +22,6 @@ Forward port 80 to desired service port
 
 List active connections:
 	ss -t(tpc) -u(udp) -s(stats) -4(ipv4) -6(ipv6)
+
+Activate network manager VPN interface:
+	nmcli connection up <vpn>
