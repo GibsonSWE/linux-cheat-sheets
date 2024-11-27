@@ -14,8 +14,14 @@ Config network interface
 	sudo ifconfig <interface> <address> netmask <netmask> up
 	sudo ip addr add <address>/<netmask> dev <interface>
 
+Remove interface address
+	sudo ip addr del <address>/<netmask> dev <interface>
+
 Config default gateway
 	sudo ip route add default via <address>
+
+Activate/Deactivate network interface
+	sudo ip link set <interface> [up/down]
 
 Forward port 80 to desired service port
 	sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port <service-port>
@@ -25,3 +31,6 @@ List active connections:
 
 Activate network manager VPN interface:
 	nmcli connection up <vpn>
+
+Show interface statistics:
+	ip -s link show <interface>
