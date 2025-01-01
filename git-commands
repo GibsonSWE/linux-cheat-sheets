@@ -1,4 +1,4 @@
 Configure Access Token:
 	git remote set-url origin https://<token>@github.com/GibsonSWE/<repository>
-	(I have saved the token in Lastpass)
+	(Get the token from Bitwarden)
 
