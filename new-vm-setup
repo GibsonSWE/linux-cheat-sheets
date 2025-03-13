@@ -5,7 +5,7 @@
 
 	timedatectl set-timezone Europe/Stockholm
 
-	apt install micro neofetch bat htop tmux tree git curl ncdu inetutils-ping inetutils-traceroute dnsutils net-tools
+	apt install micro neofetch bat htop iftop tmux tree git curl ncdu inetutils-ping inetutils-traceroute dnsutils net-tools
 
 For password-store
 	apt install pass

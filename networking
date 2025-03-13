@@ -6,6 +6,7 @@ Check DNS-service:
 
 Get public IP:
 	curl ifconfig.co
+	curl -4 ip.me
 
 Config DNS address:
 	sudo resolvectl dns <interface> <address>
@@ -34,3 +35,7 @@ Activate network manager VPN interface:
 
 Show interface statistics:
 	ip -s link show <interface>
+
+List listening ports:
+    netstat -tuln
+
