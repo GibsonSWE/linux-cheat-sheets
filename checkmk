@@ -1,0 +1,9 @@
+Checkmk Agent:
+    cmk-agent-ctl
+
+Register Checkmk Agent:
+    sudo cmk-agent-ctl register \
+    --server <server-ip> \
+    --site monitoring \
+    --user gibson \
+    --hostname <hostname>

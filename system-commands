@@ -1,43 +1,46 @@
+List appropriate commands for keyword:
+    apropos <keyword>
+
 Check OS-release:
-	cat /etc/os-release
+    cat /etc/os-release
 
 Check processes:
-	ps auxf
+    ps auxf
 
 Check process ID:
-	ps auxf | grep <process-name>
-	pidof <process-name>
+    ps auxf | grep <process-name>
+    pidof <process-name>
 
 Check mounted volumes:
-	mount | column -t
+    mount | column -t
 
 Check file systems:
-	df -h
+    df -h
 
 Check drives and partitions:
-	lsblk -f
-	fdisk -l
+    lsblk -f
+    fdisk -l
 
 Set hostname:
-	sudo hostnamectl set-hostname <hostname>
+    sudo hostnamectl set-hostname <hostname>
 
 Set descriptive (pretty) hostname:
-	sudo hostnamectl set-hostname --pretty "<My descriptive hostname>"
+    sudo hostnamectl set-hostname --pretty "<My descriptive hostname>"
 
 Check system informatiom:
-	hostnamectl status
+    hostnamectl status
 
 Insert text at specific line in file:
-	sed -i "<line nr>i <text>" <filename>
+    sed -i "<line nr>i <text>" <filename>
 	
 Install files for other users
-	sudo install -v (verbose) -o (owner) <user> <file> <dest>
+    sudo install -v (verbose) -o (owner) <user> <file> <dest>
 
 Change username:
-	usermod -l <new username> <old username>
-	usermod -d /home/<new username> -m <new username>
-	groupadd <new username>
-	usermod -g <new username> <new username>
+    usermod -l <new username> <old username>
+    usermod -d /home/<new username> -m <new username>
+    groupadd <new username>
+    usermod -g <new username> <new username>
 
 Aternative to systemctl:	
-	sudo service <service> status/start/stop/restart
+    sudo service <service> status/start/stop/restart
