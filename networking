@@ -38,4 +38,7 @@ Show interface statistics:
 
 List listening ports:
     netstat -tuln
+    ss -tulpn
 
+Test TCP connectivity:
+    nc -vz <address> <port>
