@@ -1,3 +1,6 @@
+Interactive TUI for NetworkManager:
+    nmtui
+
 Flush DNS cache:
 	sudo resolvectl flush-caches
 
