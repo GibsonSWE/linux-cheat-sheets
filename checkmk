@@ -3,7 +3,7 @@ Checkmk Agent:
 
 Register Checkmk Agent:
     sudo cmk-agent-ctl register \
-    --server <server-ip> \
+    --server <server-ip> (10.0.20.14) \
     --site monitoring \
-    --user gibson \
+    --user agent-reg \
     --hostname <hostname>
