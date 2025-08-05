@@ -42,3 +42,8 @@ Show interface statistics:
 List listening ports:
     netstat -tuln
 
+Create listening test port:
+    nc -lkv <port number>
+
+Send test packet:
+    nc -vz <ip> <port number>
