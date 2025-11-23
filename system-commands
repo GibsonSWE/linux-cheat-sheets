@@ -44,3 +44,7 @@ Change username:
 
 Aternative to systemctl:	
     sudo service <service> status/start/stop/restart
+
+Check slow starting processes:
+    sudo systemd-analyze blame
+    sudo systemd-analyze critical-chain
