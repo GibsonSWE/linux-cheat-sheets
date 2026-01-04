@@ -1,0 +1,2 @@
+ZFS diff:
+    sudo zfs diff -FH <snapshot> <dataset> > <output-filename>
