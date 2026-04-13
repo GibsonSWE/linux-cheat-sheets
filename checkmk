@@ -1,5 +1,5 @@
 Download & Install Agent:
-    wget --no-check-certificate https://monitor.gibnet.se/monitoring/check_mk/agents/check-mk-agent_2.3.0p30-1_all.deb
+    wget --no-check-certificate http://checkmk.internal.gibnet.se/monitoring/check_mk/agents/check-mk-agent_2.3.0p30-1_all.deb
     sudo apt install ./check-mk-agent_2.3.0p30-1_all.deb
     
 Checkmk Agent:
