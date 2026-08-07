@@ -1,0 +1,31 @@
+List available snapshots:
+	sudo -i
+	proxmox-backup-client snapshot list
+
+
+Mount backup:
+	sudo -i
+
+	mkdir /mnt/pbc-restore
+
+	proxmox-backup-client mount \
+	  <snapshot> \
+	  <file>[.*xar] \
+	  /mnt/pbc-restore
+
+	  
+Restore Backup:
+	sudo -i
+
+	mkdir -p /tmp/pbc-restore
+
+	proxmox-backup-client restore \
+	  <snapshot> \
+	  <file>[.*xar] \
+	  /tmp/pbc-restore
+
+
+Inspect services and timers:
+	systemctl status proxmox-backup-workstation.service
+	systemctl status proxmox-backup-workstation.timer
+	journalctl -u proxmox-backup-workstation.service
