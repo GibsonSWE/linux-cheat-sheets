@@ -1,0 +1,9 @@
+Config:
+    micro /etc/fail2ban/jail.local
+
+Check sshd status: 
+    fail2ban-client status sshd
+
+Unban:
+    fail2ban-client set sshd unbanip <ip>
+
